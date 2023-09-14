@@ -12,7 +12,14 @@ const findUser = users.find((user) => user.id === searchValue);
 
 }) */
 
-console.log("Before");
-setTimeout(() => console.log("It's Time"), 500);
-console.log("After");
+console.log('Before');
+setTimeout(() => console.log("It's Time"), 2500);
+console.log('After');
 
+
+const printMessage = () => {
+    console.log("Hello there");
+    printMessage()
+}
+
+printMessage()

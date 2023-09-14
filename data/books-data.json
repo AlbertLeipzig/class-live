@@ -16,6 +16,14 @@
     "image": "http://dummyimage.com/185x100.png/cc0000/ffffff"
   },
   {
+    "id": 2000,
+    "title": "Test Title",
+    "author": "Vickie Iskowicz",
+    "price": 83,
+    "categories": "Action|Drama|War",
+    "image": "http://dummyimage.com/185x100.png/cc0000/ffffff"
+  },
+  {
     "id": 3,
     "title": "Street People",
     "author": "Clemmy Valenta",

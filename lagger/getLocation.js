@@ -1,6 +1,5 @@
 async function getLocation() {
     try {
-      console.log(1123123);
       if ('geolocation' in navigator) {
         const permissionStatus = await navigator.permissions.query({
           name: 'geolocation',

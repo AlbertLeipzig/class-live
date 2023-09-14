@@ -1,0 +1,6 @@
+const timer = () => {
+  
+  timer();
+};
+
+timer()
