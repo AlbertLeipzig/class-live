@@ -1,36 +1,23 @@
 import booksData from '../data/books-data.json' assert { type: 'json' };
 
-// find()
-// filter()
+// map      => gibt ein Array zurück
+// forEach  => führt ein Action aus der Data
 
-const numbers = [1, 2, 3, 4, 5];
+//  alle Authoren von booksData auf den Terminal drucken lassen
 
-const smallNumbers = numbers.filter((number) => number % 2 === 0);
+const authorsList = booksData.map((book) => book.author);
 
-/* console.log(smallNumbers); */
+const cheapBooks = booksData.filter(book => book.price < 20)
 
-const userNames = ['Anna', 'Berta', 'Cesar', 'Dora', 'Anna', 'Emil', 'Dora'];
+console.log(cheapBooks);
 
-const filteredUsers = userNames.find((name) => name === 'Anna');
+/* console.log(authorsList); */
 
-/* console.log(filteredUsers); */
+/* booksData.forEach((book) => console.log(book.author)); */
 
-// books that
-// const filteredBooks = booksData.filter((book) => book.price < 30);
-
-const filterBooks = (typeOfSearch, searchValue) => {
-  return booksData.filter((book) => book[typeOfSearch] === searchValue);
-};
-
-const filteredBooks = filterBooks('author', 'Vickie Iskowicz');
-
-// find book with title "Day They Robbed the Bank of England, The"
-
-const findBook = (typeOfSearch, searchValue) => {
-  return booksData.find((book) => book[typeOfSearch] === searchValue);
-};
-
-const foundBook = findBook('author', 'Vickie Iskowicz');
-
-/* console.log(filteredBooks); */
-console.log(foundBook);
+/* for (const book of booksData) {
+  if (book.author === 'Stacy Gapp') {
+    break;
+  }
+  console.log(book.author);
+} */
